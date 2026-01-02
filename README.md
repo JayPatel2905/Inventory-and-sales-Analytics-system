@@ -1,75 +1,47 @@
-# Inventory & Sales Analytics System
+# 📦 Inventory and Sales Analytics System
 
-## Overview
-The **Inventory & Sales Analytics System** is a Python-based application designed to help small and medium-sized businesses manage inventory, suppliers, and sales while deriving **actionable business insights** from transactional data.
+## 📌 Project Overview
 
-Unlike basic CRUD applications, this project emphasizes **analytics, reporting, and visualization**, demonstrating practical use of Python, SQL, and data analysis tools in a real-world business context.
+The **Inventory and Sales Analytics System** is a Python-based application designed to manage product inventory, record sales transactions, and generate meaningful business analytics.  
+The project demonstrates real-world backend concepts such as database integration, inventory control, sales processing, and data visualization.
 
----
-
-## Key Features
-
-### Inventory Management
-- Add and view products with category and pricing details  
-- Track stock levels and define reorder thresholds  
-- Maintain supplier information with relational integrity  
-
-### Sales Management
-- Record sales transactions  
-- Automatically update inventory after each sale  
-- Calculate total sales value per transaction  
-
-### Analytics & Insights
-- Identify top-selling products  
-- Generate monthly revenue summaries  
-- Detect low-stock items to prevent stock-outs  
-
-### Data Visualization
-- Revenue trends using line charts  
-- Product demand using bar charts  
-- Inventory risk visualization for low-stock products  
+This system is suitable for small businesses or learning purposes and showcases core skills required for a **fresher Python developer**.
 
 ---
 
-## Tech Stack
+## 🚀 Features
 
-| Component | Technology |
-|---------|------------|
-| Language | Python |
-| Database | MySQL |
-| Data Analysis | Pandas |
-| Visualization | Matplotlib |
-| DB Connectivity | mysql-connector-python |
-| Environment Management | python-dotenv |
-| Version Control | Git |
+- Product and inventory management  
+- Sales recording with automatic stock updates  
+- Revenue and sales analytics  
+- Data visualization using charts  
+- MySQL database integration  
+- Environment variable configuration using `.env`
 
 ---
 
-## Project Structure
+## 🛠️ Tech Stack
+
+- **Programming Language:** Python  
+- **Database:** MySQL  
+- **Libraries Used:**
+  - mysql-connector-python
+  - pandas
+  - matplotlib
+  - python-dotenv
+
+---
+
+## 📂 Project Structure
 
 ```text
-inventory_sales/
+Inventory-and-sales-Analytics-system/
 │
-├── database/
-│   ├── connection.py        # Database connection logic
-│   └── schema.sql           # SQL schema
-│
-├── inventory/
-│   ├── product_crud.py      # Product-related operations
-│   └── supplier_crud.py     # Supplier-related operations
-│
-├── sales/
-│   └── sales.py             # Sales handling and stock updates
-│
-├── analytics/
-│   ├── sales_analysis.py    # Revenue and demand analytics
-│   ├── stock_analysis.py    # Inventory risk analysis
-│   └── visualization.py    # Matplotlib charts
-│
-├── reports/
-│   └── monthly_report.py    # Revenue reports
-│
-├── main.py                  # Application entry point
-├── .env                     # Environment variables (ignored)
-├── requirements.txt         # Project dependencies
+├── inventory.py # Inventory CRUD operations
+├── sales.py # Sales processing logic
+├── analytics.py # Sales and revenue analytics
+├── database.py # Database connection handling
+├── main.py # Entry point of the application
+├── .env # Environment variables (not pushed to GitHub)
+├── .gitignore
 └── README.md
